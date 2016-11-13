@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--bowerStyles-->
     <!--styles-->
+    <link href="vendor.css" rel="stylesheet">
 </head>
 <body>
-<div class="container" ng-view></div>
-<!--scripts-->
-<!--config-->
+<div class="wrapper">
+    <navbar-top></navbar-top>
+
+
+    <loader></loader>
+
+    <div class="container" ng-view></div>
+
+    <!--scripts-->
+    <!--config-->
+
+</div>
+<footer>
+    Panov Aleksandr
+    <a href="https://github.com/babagay" target="_blank">link to github</a>
+</footer>
 </body>
 </html>

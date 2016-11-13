@@ -1,0 +1,13 @@
+<h2 ng-show="!showMessage()">Album: {{ album.title }} </h2>
+
+<div ng-show="showMessage()">{{ message }}</div>
+
+<ul class="album-detail">
+    <li ng-repeat="photo in albumPhotos">
+        <div class="link">
+            <a href="/#/image/{{ photo.id }}"></a>
+            <img ng-src="{{ photo.thumbnailUrl }}"/>
+        </div>
+        <h4>{{ photo.title }}</h4>
+    </li>
+</ul>

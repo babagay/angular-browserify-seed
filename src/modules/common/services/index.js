@@ -2,4 +2,6 @@
 
 module.exports =
     angular.module('expressly.common.services', [])
-        .factory('exampleService', require('./example.service'));
+        .factory('album', require('./album.service'))
+        .factory('storage', require('./storage.service'))
+;

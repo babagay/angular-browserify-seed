@@ -1,0 +1,12 @@
+<div class="albums-list-container">
+
+    Search: <input ng-model="query" class="search"/>
+
+    <ul>
+        <li ng-repeat="album in albums | filter:query">
+            <!--{{ album.id }}-->
+            <!--{{ album.userId }}-->
+            <a href="/#/album/{{ album.id }}">{{ album.title }}</a>
+        </li>
+    </ul>
+</div>
